@@ -1,0 +1,34 @@
+.container{
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+}
+.navigation-menu{
+    height: calc(100vh - 4rem);
+}
+.navigation-link:hover .navigation-submenu{
+    display: block !important;
+}
+
+/* ADMIN COMPONENTS */
+
+.nav-item{
+    @apply hover:bg-black hover:bg-opacity-30 transition duration-200
+}
+.nav-item.active{
+    @apply bg-black bg-opacity-30 border-l-4 border-blue-700
+}
+.nav-link{
+    @apply flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200
+}
+.nav-icon{
+    @apply w-5 h-5 transition duration-200
+}
+.nav-item:hover .nav-link .nav-icon{
+    @apply text-gray-100
+}
+.nav-text{
+    @apply ml-3 transition duration-200
+}
+.nav-item:hover .nav-link .nav-text{
+    @apply text-gray-100
+}
+
